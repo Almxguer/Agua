@@ -254,6 +254,72 @@
   position: relative;
 }
 
+/* Estilos para la sección Servicios */
+.servicios-section {
+  background: linear-gradient(135deg, #4a90e2, #50e3c2);
+  color: #fff;
+  padding: 60px 30px;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(74, 144, 226, 0.5);
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.servicios-section:hover {
+  box-shadow: 0 16px 50px rgba(74, 144, 226, 0.8);
+}
+
+.servicios-title {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.servicios-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.servicio-item {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 25px 20px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.servicio-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+.servicio-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+.servicio-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #f0f9ff;
+}
+
+
   </style>
 </head>
 <body>
@@ -317,15 +383,25 @@
 </section>
 
 
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <ul>
-      <li>Suministro de agua potable</li>
-      <li>Instalación de purificadores</li>
-      <li>Diagnóstico y análisis de calidad de agua</li>
-      <li>Asesoría en ahorro de agua para industrias y hogares</li>
-    </ul>
-  </section>
+<section id="servicios" class="servicios-section">
+  <h2 class="servicios-title">Servicios</h2>
+  <ul class="servicios-list">
+    <li class="servicio-item">
+      <h3>Diseño Personalizado</h3>
+      <p>Creación de diseños únicos y adaptados a tus necesidades.</p>
+    </li>
+    <li class="servicio-item">
+      <h3>Consultoría</h3>
+      <p>Asesoramiento experto para optimizar tu proyecto.</p>
+    </li>
+    <li class="servicio-item">
+      <h3>Soporte Técnico</h3>
+      <p>Atención rápida y eficiente para resolver cualquier inconveniente.</p>
+    </li>
+  </ul>
+</section>
+
+
 
   <section id="proyectos">
     <h2>Proyectos Sostenibles</h2>
@@ -408,5 +484,9 @@ actualizarCarrusel();
 
   </script>
 </body>
+
+
 </html>
+
+
 
